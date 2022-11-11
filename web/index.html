@@ -8,6 +8,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <div id="embed" style="position: fixed; right: 0; bottom: 0"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="/embed.umd.cjs" type="text/javascript"></script>
+    <script>
+      Embed.init("embed");
+    </script>
   </body>
 </html>
